@@ -14,219 +14,111 @@
     min-height: 100vh;
   }
 
-  /* HEADER */
   .site-header {
     background: #1e3a64;
     padding: 28px 24px 24px;
     text-align: center;
   }
   .site-header img {
-    width: 80px;
-    height: 80px;
+    width: 80px; height: 80px;
     border-radius: 50%;
     border: 3px solid rgba(255,255,255,0.3);
-    margin-bottom: 14px;
+    margin: 0 auto 14px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .site-header h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.3;
-    margin-bottom: 6px;
-  }
-  .site-header p {
-    font-size: 14px;
-    color: #b8d4ee;
-  }
+  .site-header h1 { font-size: 22px; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 6px; }
+  .site-header p { font-size: 14px; color: #b8d4ee; }
 
-  /* COMMITTEE GROUPS */
-  .content {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 24px 16px 48px;
-  }
+  .content { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
 
-  .committee-group {
-    margin-bottom: 32px;
-  }
+  .committee-group { margin-bottom: 32px; }
 
   .committee-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #3b6fa5;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #3b6fa5;
     padding: 0 4px 10px;
     border-bottom: 1.5px solid #d0dff0;
     margin-bottom: 14px;
   }
 
-  /* SERVICE CARD */
   .card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 20px;
+    background: #fff; border-radius: 14px; padding: 20px;
     margin-bottom: 14px;
     box-shadow: 0 1px 4px rgba(30,58,100,0.08);
     border: 0.5px solid #dde8f5;
   }
 
-  .card-role {
-    font-size: 17px;
-    font-weight: 600;
-    color: #1a3d6b;
-    margin-bottom: 10px;
-    line-height: 1.3;
+  .service-badge {
+    display: inline-block;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: #fff;
+    background: #3b6fa5; border-radius: 4px;
+    padding: 2px 8px; margin-bottom: 8px;
   }
+
+  .card-role { font-size: 17px; font-weight: 600; color: #1a3d6b; margin-bottom: 10px; line-height: 1.3; }
 
   .card-section-label {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #3b6fa5;
-    margin: 14px 0 6px;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #3b6fa5; margin: 14px 0 6px;
   }
 
-  .card-goal {
-    font-size: 14px;
-    color: #5a7a9a;
-    line-height: 1.55;
-    margin-bottom: 4px;
-  }
+  .card-goal { font-size: 14px; color: #5a7a9a; line-height: 1.55; margin-bottom: 4px; }
 
-  .duties-list, .req-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
+  .duties-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
   .duties-list li {
-    font-size: 14px;
-    color: #2a3d55;
-    line-height: 1.5;
-    padding-left: 16px;
-    position: relative;
+    font-size: 14px; color: #2a3d55; line-height: 1.5;
+    padding-left: 16px; position: relative;
   }
   .duties-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #3b6fa5;
-    font-size: 16px;
-    line-height: 1.3;
+    content: "•"; position: absolute; left: 0;
+    color: #3b6fa5; font-size: 16px; line-height: 1.3;
   }
 
-  .req-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 6px;
-  }
-
+  .req-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
   .req-item {
-    background: #f0f5fb;
-    border-radius: 8px;
-    padding: 8px 10px;
-    font-size: 13px;
-    color: #1a4a82;
-    line-height: 1.4;
-    display: flex;
-    gap: 7px;
-    align-items: flex-start;
+    background: #f0f5fb; border-radius: 8px; padding: 8px 10px;
+    font-size: 13px; color: #1a4a82; line-height: 1.4;
+    display: flex; gap: 7px; align-items: flex-start;
   }
-  .req-item::before {
-    content: "✓";
-    color: #3b6fa5;
-    font-weight: 700;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
+  .req-item::before { content: "✓"; color: #3b6fa5; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
-  /* CONTACT */
   .card-contact {
-    background: #1e3a64;
-    border-radius: 10px;
-    padding: 14px 16px;
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+    background: #1e3a64; border-radius: 10px; padding: 14px 16px;
+    margin-top: 16px; display: flex; flex-direction: column;
+    align-items: center; gap: 6px;
   }
-  .contact-label {
-    font-size: 12px;
-    color: #8bb8e0;
-  }
-  .contact-name {
-    font-size: 17px;
-    font-weight: 600;
-    color: #fff;
-  }
-  .contact-phone {
-    font-size: 15px;
-    color: #c8dff2;
-  }
-  .contact-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 4px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  .contact-label { font-size: 12px; color: #8bb8e0; }
+  .contact-name { font-size: 17px; font-weight: 600; color: #fff; }
+  .contact-phone { font-size: 15px; color: #c8dff2; }
+  .contact-handle { font-size: 15px; color: #c8dff2; }
+  .contact-buttons { display: flex; gap: 10px; margin-top: 4px; flex-wrap: wrap; justify-content: center; }
+
   .btn-wa {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #25D366;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: opacity 0.15s;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #25D366; color: #fff; font-size: 13px; font-weight: 600;
+    padding: 8px 16px; border-radius: 20px; text-decoration: none; transition: opacity 0.15s;
   }
   .btn-tg {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #2AABEE;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: opacity 0.15s;
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #2AABEE; color: #fff; font-size: 13px; font-weight: 600;
+    padding: 8px 16px; border-radius: 20px; text-decoration: none; transition: opacity 0.15s;
   }
   .btn-wa:hover, .btn-tg:hover { opacity: 0.85; }
 
-  /* toggle / collapse */
   .card-toggle {
-    width: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    text-align: left;
+    width: 100%; background: none; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0; text-align: left;
   }
-  .card-toggle .arrow {
-    font-size: 18px;
-    color: #3b6fa5;
-    transition: transform 0.2s;
-    flex-shrink: 0;
-  }
+  .card-toggle .arrow { font-size: 18px; color: #3b6fa5; transition: transform 0.2s; flex-shrink: 0; }
   .card-toggle.open .arrow { transform: rotate(180deg); }
   .card-body { display: none; }
   .card-body.open { display: block; }
+
+  .service-divider {
+    height: 2px; background: #e0eaf5; border-radius: 1px; margin: 20px 0;
+  }
 
   @media (max-width: 480px) {
     .req-grid { grid-template-columns: 1fr; }
@@ -237,17 +129,21 @@
 <body>
 
 <header class="site-header">
-  <img src="https://i.imgur.com/placeholder.png" alt="ОАР лого" onerror="this.style.display='none'">
+  <img src="https://raw.githubusercontent.com/oar-aa/oar-aa.github.io/main/logo.jpg" alt="ОАР лого"
+       onerror="this.style.display='none'">
   <h1>Открытые служения ОАР</h1>
   <p>Русскоязычное АА — США и Канада</p>
 </header>
 
 <div class="content">
 
+  <!-- ═══════════════════════════════════════ -->
   <!-- КИО -->
+  <!-- ═══════════════════════════════════════ -->
   <div class="committee-group">
     <div class="committee-label">Комитет по Информированию Общественности (КИО)</div>
 
+    <!-- Служение 1: Соцсети -->
     <div class="card">
       <button class="card-toggle" onclick="toggle(this)">
         <div class="card-role">Служащий для ведения социальных сетей</div>
@@ -271,50 +167,78 @@
           <div class="req-item">Навыки ведения социальных сетей</div>
         </div>
         <div class="card-contact">
-          <span class="contact-label">По всем вопросам</span>
+          <span class="contact-label">По всем вопросам обращайтесь</span>
           <span class="contact-name">Маша</span>
-          <span class="contact-phone">+1 (347) 369-1160</span>
+          <span class="contact-handle">@Alaskadream</span>
           <div class="contact-buttons">
-            <a class="btn-wa" href="https://wa.me/13473691160">📱 WhatsApp</a>
-            <a class="btn-tg" href="https://t.me/+13473691160">✈️ Telegram</a>
+            <a class="btn-tg" href="https://t.me/Alaskadream">✈️ Telegram</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Служение 2: Координатор базы контактов -->
     <div class="card">
       <button class="card-toggle" onclick="toggle(this)">
-        <div class="card-role">Координатор базы контактов</div>
+        <div>
+          <div class="service-badge">Служение 1</div>
+          <div class="card-role">Координатор базы контактов</div>
+        </div>
         <span class="arrow">⌄</span>
       </button>
       <div class="card-body">
         <div class="card-section-label">Что нужно делать</div>
         <ul class="duties-list">
-          <li>Искать в интернете и заполнять таблицу Excel с контактами церквей, психологов, психиатров, интергрупп и адвокатов</li>
-          <li>Информировать организации о русскоязычном сообществе АА</li>
-          <li>Отправлять письма и звонить в организации по готовому скрипту</li>
+          <li>Искать в интернете контакты церквей, психологов, психиатров, интергрупп и адвокатов и заполнять базу данных</li>
         </ul>
         <div class="card-section-label">Требования</div>
         <div class="req-grid">
-          <div class="req-item">От 1 года трезвости</div>
+          <div class="req-item">От 6 месяцев трезвости</div>
           <div class="req-item">Наличие спонсора и прохождение шагов</div>
           <div class="req-item">Желание нести весть АА</div>
           <div class="req-item">Желательно знание традиций АА</div>
         </div>
         <div class="card-contact">
-          <span class="contact-label">По всем вопросам</span>
+          <span class="contact-label">По всем вопросам обращайтесь</span>
           <span class="contact-name">Маша</span>
-          <span class="contact-phone">+1 (347) 369-1160</span>
+          <span class="contact-handle">@Alaskadream</span>
           <div class="contact-buttons">
-            <a class="btn-wa" href="https://wa.me/13473691160">📱 WhatsApp</a>
-            <a class="btn-tg" href="https://t.me/+13473691160">✈️ Telegram</a>
+            <a class="btn-tg" href="https://t.me/Alaskadream">✈️ Telegram</a>
+          </div>
+        </div>
+
+        <div class="service-divider"></div>
+
+        <div class="service-badge">Служение 2</div>
+        <div class="card-role" style="margin-top:8px;">Координатор связи с общественностью</div>
+        <div class="card-section-label">Что нужно делать</div>
+        <ul class="duties-list">
+          <li>Информировать организации о русскоязычном сообществе АА</li>
+          <li>Отправлять письма и звонить в организации по готовому скрипту</li>
+          <li>Поддерживать живой контакт через телефон и email</li>
+        </ul>
+        <div class="card-section-label">Требования</div>
+        <div class="req-grid">
+          <div class="req-item">От 2 лет трезвости</div>
+          <div class="req-item">Наличие спонсора и прохождение шагов</div>
+          <div class="req-item">Желание нести весть АА</div>
+          <div class="req-item">Желательно знание традиций АА</div>
+        </div>
+        <div class="card-contact">
+          <span class="contact-label">По всем вопросам обращайтесь</span>
+          <span class="contact-name">Маша</span>
+          <span class="contact-handle">@Alaskadream</span>
+          <div class="contact-buttons">
+            <a class="btn-tg" href="https://t.me/Alaskadream">✈️ Telegram</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- ═══════════════════════════════════════ -->
   <!-- Архивный комитет -->
+  <!-- ═══════════════════════════════════════ -->
   <div class="committee-group">
     <div class="committee-label">Комитет Архивов</div>
 
@@ -337,7 +261,7 @@
           <div class="req-item">Желательно знание традиций АА</div>
         </div>
         <div class="card-contact">
-          <span class="contact-label">По всем вопросам</span>
+          <span class="contact-label">По всем вопросам обращайтесь</span>
           <span class="contact-name">Максим</span>
           <span class="contact-phone">+1 (816) 529-8678</span>
           <div class="contact-buttons">
@@ -349,9 +273,11 @@
     </div>
   </div>
 
+  <!-- ═══════════════════════════════════════ -->
   <!-- IT Комитет -->
+  <!-- ═══════════════════════════════════════ -->
   <div class="committee-group">
-    <div class="committee-label">IT Комитет ОАР</div>
+    <div class="committee-label">IT Комитет ОАР США и Канады</div>
 
     <div class="card">
       <button class="card-toggle" onclick="toggle(this)">
@@ -373,19 +299,21 @@
           <div class="req-item">Достаточно времени для служения</div>
         </div>
         <div class="card-contact">
-          <span class="contact-label">По всем вопросам</span>
-          <span class="contact-name">Саша</span>
-          <span class="contact-phone">+1 (925) 548-8525</span>
+          <span class="contact-label">По всем вопросам обращайтесь</span>
+          <span class="contact-name">Егор</span>
+          <span class="contact-phone">+1 (407) 967-9815</span>
           <div class="contact-buttons">
-            <a class="btn-wa" href="https://wa.me/19255488525">📱 WhatsApp</a>
-            <a class="btn-tg" href="https://t.me/+19255488525">✈️ Telegram</a>
+            <a class="btn-wa" href="https://wa.me/14079679815">📱 WhatsApp</a>
+            <a class="btn-tg" href="https://t.me/+14079679815">✈️ Telegram</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- ═══════════════════════════════════════ -->
   <!-- Горячая линия -->
+  <!-- ═══════════════════════════════════════ -->
   <div class="committee-group">
     <div class="committee-label">Горячая линия АА</div>
 
@@ -413,7 +341,7 @@
           <div class="req-item">Ответственность и анонимность</div>
         </div>
         <div class="card-contact">
-          <span class="contact-label">По всем вопросам</span>
+          <span class="contact-label">По всем вопросам обращайтесь</span>
           <span class="contact-name">Саша</span>
           <span class="contact-phone">+1 (773) 587-4168</span>
           <div class="contact-buttons">
@@ -430,10 +358,8 @@
 <script>
   function toggle(btn) {
     btn.classList.toggle('open');
-    const body = btn.nextElementSibling;
-    body.classList.toggle('open');
+    btn.nextElementSibling.classList.toggle('open');
   }
-  // Open all on load
   document.querySelectorAll('.card-toggle').forEach(btn => {
     btn.classList.add('open');
     btn.nextElementSibling.classList.add('open');
